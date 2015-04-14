@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://service.ws.niit.com/" xmlns:tns="http://service.ws.niit.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Exception" type="tns:Exception"/>
+
+  <xs:element name="calculateGCDRequest" type="tns:calculateGCDRequest"/>
+
+  <xs:element name="calculateGCDResponse" type="tns:calculateGCDResponse"/>
+
+
+  <xs:element name="getGCDListRequest" type="tns:getGCDListRequest"/>
+
+  <xs:element name="getGCDListResponse" type="tns:getGCDListResponse"/>
+
+  <xs:element name="getGCDSumRequest" type="tns:getGCDSumRequest"/>
+
+  <xs:element name="getGCDSumResponse" type="tns:getGCDSumResponse"/>
+
+
+  <xs:complexType name="calculateGCDRequest">
+  
+  </xs:complexType>
+  
+  <xs:complexType name="calculateGCDResponse">
+    <xs:sequence>
+       <xs:element name="output" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+   <xs:complexType name="getGCDListRequest">
+
+  </xs:complexType>
+  
+  <xs:complexType name="getGCDListResponse">
+    <xs:sequence>
+       <xs:element name="list" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+ <xs:complexType name="getGCDSumRequest">
+
+  </xs:complexType>
+  
+  <xs:complexType name="getGCDSumResponse">
+    <xs:sequence>
+       <xs:element name="list" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

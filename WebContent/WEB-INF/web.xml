@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web_1:web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>GCDApplication</display-name>
+  <web_1:servlet>
+    <web_1:servlet-name>jersey-servlet</web_1:servlet-name>
+    <web_1:servlet-class>
+ org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher
+  </web_1:servlet-class>
+    <web_1:init-param>
+      <param-name>jax.ws.rs.Application</param-name>
+      <param-value>beans.Service.RestJsonService</param-value>
+    </web_1:init-param>
+    <web_1:load-on-startup>1</web_1:load-on-startup>
+  </web_1:servlet>
+  <web_1:servlet-mapping>
+    <web_1:servlet-name>jersey-servlet</web_1:servlet-name>
+    <web_1:url-pattern>/rest/*</web_1:url-pattern>
+  </web_1:servlet-mapping>
+  <web_1:servlet>
+    <display-name>Apache-Axis Servlet</display-name>
+    <web_1:servlet-name>AxisServlet</web_1:servlet-name>
+    <web_1:servlet-class>org.apache.axis.transport.http.AxisServlet</web_1:servlet-class>
+  </web_1:servlet>
+  <web_1:servlet-mapping>
+    <web_1:servlet-name>AxisServlet</web_1:servlet-name>
+    <web_1:url-pattern>/servlet/AxisServlet</web_1:url-pattern>
+  </web_1:servlet-mapping>
+  <web_1:servlet-mapping>
+    <web_1:servlet-name>AxisServlet</web_1:servlet-name>
+    <web_1:url-pattern>*.jws</web_1:url-pattern>
+  </web_1:servlet-mapping>
+  <web_1:servlet-mapping>
+    <web_1:servlet-name>AxisServlet</web_1:servlet-name>
+    <web_1:url-pattern>/services/*</web_1:url-pattern>
+  </web_1:servlet-mapping>
+  <web_1:servlet>
+    <display-name>Axis Admin Servlet</display-name>
+    <web_1:servlet-name>AdminServlet</web_1:servlet-name>
+    <web_1:servlet-class>org.apache.axis.transport.http.AdminServlet</web_1:servlet-class>
+    <web_1:load-on-startup>100</web_1:load-on-startup>
+  </web_1:servlet>
+  <web_1:servlet-mapping>
+    <web_1:servlet-name>AdminServlet</web_1:servlet-name>
+    <web_1:url-pattern>/servlet/AdminServlet</web_1:url-pattern>
+  </web_1:servlet-mapping>
+</web_1:web-app>

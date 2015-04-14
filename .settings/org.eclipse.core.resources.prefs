@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/com/niit/ws/service/CalculateGCDRequest.java=UTF-8
+encoding//src/com/niit/ws/service/CalculateGCDResponse.java=UTF-8
+encoding//src/com/niit/ws/service/Exception.java=UTF-8
+encoding//src/com/niit/ws/service/GetGCDListRequest.java=UTF-8
+encoding//src/com/niit/ws/service/GetGCDSumRequest.java=UTF-8
+encoding//src/com/niit/ws/service/SOAPServicePortBindingImpl.java=UTF-8
+encoding//src/com/niit/ws/service/SOAPServicePortBindingSkeleton.java=UTF-8
+encoding//src/com/niit/ws/service/SOAPServicePortBindingStub.java=UTF-8
+encoding//src/com/niit/ws/service/SOAPService_PortType.java=UTF-8
+encoding//src/com/niit/ws/service/SOAPService_Service.java=UTF-8
+encoding//src/com/niit/ws/service/SOAPService_ServiceLocator.java=UTF-8
